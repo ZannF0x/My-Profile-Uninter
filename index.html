@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+        crossorigin="anonymous"
+    >
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>UNINTER - Zannardy</title>
+</head>
+<body>
+    
+<!-- Container principal que dá acesso aos modais -->
+<div class="main_container">
+    <div class="wrapper">
+        <div class="img_top">
+            <img src="images/my_photo.jpg" alt="my_photo"/>
+        </div>
+        <br>
+        <div class="text-center">
+            <h4>Olá, me chamo Zannardy Andrade Oliveira</h4>
+            <h5>Seja bem vindo ao meu perfil!</h5>
+        </div>
+        <hr>
+        <div class="text-center">
+            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Quer saber mais sobre mim?
+            </button>
+            <ul class="dropdown-menu">
+                <li class="select_option">
+                    <a class="dropdown-item" id="option_know_me" href="#">Me conheça melhor</a> <img class="icon_image" src="images/person.svg" alt="person_photo"/>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li class="select_option" id="option_formation">
+                    <a class="dropdown-item" href="#">Minhas formações</a> <img class="icon_image" src="images/diploma.svg" alt="person_photo"/>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li class="select_option" id="option_contact">
+                    <a class="dropdown-item" href="#">Entre em contato comigo</a> <img class="icon_image" src="images/email.svg" alt="person_photo"/>
+                </li> 
+                <li><hr class="dropdown-divider"></li>
+                <li class="select_option" id="option_portfolio">
+                    <a class="dropdown-item" href="#">Meu portfolio</a> <img class="icon_image" src="images/developer.svg" alt="person_photo"/>
+                </li> 
+            </ul>
+          </div>
+    </div>
+</div>
+
+<!-- Fade para dar um fundo escuro -->
+<div class="hide" id="modal_fade"></div>
+
+<!-- Modal que vai dar acesso a uma página sobre o aluno -->
+<div class="hide" id="modal_know_me">
+    <div class="modal_header">
+        <h2> Me conheça melhor </h2>
+        <button class="btn btn-danger" type="button" id="btn_close_modal_know_me"> Fechar </button>
+    </div>
+    <div class="modal_body">
+        <p>
+           Nesta página, você conhecerá um pouco sobre mim, minha personalidade e minha trajetória. Espero que goste! 
+        </p>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" id="btn_open_page_know_me">
+                <a href="know_me.html">Acessar página</a>
+            </button>
+        </div>
+    </div>
+</div>
+    
+<!-- Modal que vai dar acesso a uma página sobre formações educacionais-->
+<div class="hide" id="modal_formation">
+    <div class="modal_header">
+        <h2> Minhas Formações atualmente </h2>
+        <button class="btn btn-danger" type="button" id="btn_close_modal_formation"> Fechar </button>
+    </div>
+    <div class="modal_body">
+        <p>
+            Nesta página, você verá sobre minhas formações atualmente, talvez essas informações futuramente sejam atualizadas. Espero que goste! 
+        </p>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" id="btn_open_page_formations">
+                <a href="formations.html">Acessar página</a>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal que vai dar acesso a uma página para entrar em contato -->
+<div class="hide" id="modal_contact">
+    <div class="modal_header">
+        <h2>Entre em contato comigo</h2>
+        <button class="btn btn-danger" type="button" id="btn_close_modal_contact"> Fechar </button>
+    </div>
+    <div class="modal_body">
+        <p>
+            Nesta página, você poderá mandar uma mensagem para mim, podemos conversar sobre qualquer coisa. Espero que goste! 
+        </p>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" id="btn_open_page_contact">
+                <a href="contact.html">Acessar página</a>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal que vai dar acesso a uma página sobre o portfolio do aluno -->
+<div class="hide" id="modal_portfolio">
+    <div class="modal_header">
+        <h2>Meu Portfólio</h2>
+        <button class="btn btn-danger" type="button" id="btn_close_modal_porfolio"> Fechar </button>
+    </div>
+    <div class="modal_body">
+        <p>
+            Nesta página, você vai ter acesso ao meu Portfólio, como projetos, certificados e experiências. Espero que goste! 
+        </p>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" id="btn_open_page_portfolio">
+                <a href="portifolio.html">Acessar página</a>
+            </button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

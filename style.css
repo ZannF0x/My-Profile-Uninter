@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0d192a;
+    display: flex;
+}
+
+h4{
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+hr{
+    color: white; 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main_container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.p_know_me {
+    color: white;
+}
+
+.portiflio_access {
+    text-decoration: none;
+    color: black;
+}
+.wrapper {
+    margin: 2rem 1rem;
+    padding: 20px;
+    background-color: #122033;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+.img_top {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img_top img {
+    width: 100%;
+    display: block;
+}
+
+.icon_image {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.icon_image_portifolio {
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.select_option{
+    display: flex;
+}
+
+#modal_fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal_know_me, #modal_formation, #modal_contact, #modal_portfolio {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    z-index: 10;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+#modal_fade.hide, #modal_know_me.hide, #modal_formation.hide, #modal_contact.hide, #modal_portfolio.hide {
+    pointer-events: none;
+    opacity: 0;
+}
+
+#modal_fade, #modal_know_me, #modal_formation, #modal_contact, #modal_portfolio { 
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.modal_body p {
+    margin-bottom: 4px;
+}
